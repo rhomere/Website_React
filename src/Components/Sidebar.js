@@ -4,7 +4,13 @@ import { SidebarData } from './SidebarData';
 
 const Sidebar = () => {
   return (
-    <div className='Sidebar'>
+    <nav className='Sidebar'>
+      <div className='image-text'>
+        <span className='image'>
+          <img src='logo.png' alt='logo'/>
+        </span>  
+      </div>
+
       <ul className='SidebarList'>  
         {SidebarData.map((val, key) => {
           return ( 
@@ -24,7 +30,7 @@ const Sidebar = () => {
           );
         })}
       </ul>
-    </div>
+    </nav>
   )
 }
 
